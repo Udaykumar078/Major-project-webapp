@@ -30,8 +30,7 @@ public class UtilityDao {
         Statement stmt=con.createStatement();
         String sql="UPDATE traders SET income=0,tempscoreforpattern=0,tempscoreforvariance=0,tempscoreforbids=0,"
                 + "rateofwinning=0,bidraisings=0,contractswon=0,contractsparticipated=0,score=1,pattern=0,"
-                + "variance=0,bids=0,raisings=0,row2=0,score2=0,score3=0,score4=0,score5=0,score6=0,score7=0,"
-                + "score8=0 WHERE 1";
+                + "variance=0,bids=0,raisings=0,row2=0,score2=0 WHERE 1";
         int ex=stmt.executeUpdate(sql);
         String sql2="UPDATE ohiomilkdata SET tempwinner=0 WHERE 1";
         int ex2=stmt.executeUpdate(sql2);

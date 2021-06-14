@@ -399,14 +399,6 @@ public class Score2 {
     int temp=(int) ar2.get(j);
     String sql="UPDATE traders SET score=score+tempscoreforpattern*0.260+tempscoreforvariance*0.503+bidraisings*0.035+tempscoreforbids*0.068+rateofwinning*0.134,score2=score2+tempscoreforpattern*0.260+tempscoreforvariance*0.503+bidraisings*0.035+tempscoreforbids*0.068+rateofwinning*0.134 WHERE traderid="+temp;
     int executeUpdate=stmt.executeUpdate(sql);
-   /* String sql2="UPDATE traders SET score2=score2+tempscoreforpattern+tempscoreforvariance+bidraisings+tempscoreforbids+rateofwinning,"+
-            "score3=score3+(tempscoreforpattern+tempscoreforvariance+bidraisings*0.5+tempscoreforbids)*rateofwinning,"+
-            "score4=score4+tempscoreforpattern+tempscoreforvariance+bidraisings*0.5+tempscoreforbids+rateofwinning,"+
-            "score5=score5+(tempscoreforpattern+tempscoreforvariance*2+bidraisings*0.5+tempscoreforbids)*rateofwinning,"+
-            "score6=score6+tempscoreforpattern+tempscoreforvariance*2+bidraisings*0.5+tempscoreforbids+rateofwinning,"+
-            "score7=score7+(tempscoreforpattern+tempscoreforvariance*2+bidraisings+tempscoreforbids)*rateofwinning,"+
-            "score8=score8+tempscoreforpattern+tempscoreforvariance*2+bidraisings+tempscoreforbids+rateofwinning WHERE traderid="+temp;
-    int executeUpdate2=stmt.executeUpdate(sql2);*/
     }
     }
     

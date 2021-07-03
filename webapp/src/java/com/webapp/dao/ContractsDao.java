@@ -32,7 +32,7 @@ public class ContractsDao {
         StringBuffer sb=new StringBuffer();
         String sql="SELECT o.traderid,o.firm,o.winningbid,o.bid,t.score,t.income FROM ohiomilkdata o,traders t WHERE o.contractid="+contractid+" AND o.traderid=t.traderid ORDER BY traderid ASC";
         rst=stmt.executeQuery(sql);
-        sb.append("<table class=\"table table-striped\"><thead><tr>"+
+        sb.append("<table class=\"table table-striped sortable\"><thead><tr>"+
             "<th scope=\"col\">Trader ID</th>"+
             "<th scope=\"col\">Firm Name</th>"+
             "<th scope=\"col\">Winner</th>"+
